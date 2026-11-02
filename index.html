@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <title>Mening Mushukcham 🐱</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <a class="logo" href="#" aria-label="Bosh sahifa">🐾 Mushukcham</a>
+      <div class="coins">🪙 <span id="coins">30</span></div>
+    </header>
+
+    <section class="welcome">
+      <div>
+        <p class="eyebrow">SENING KICHKINA DO‘STING</p>
+        <h1>Mening <span>Mushukcham</span> 💗</h1>
+        <p class="intro">Unga mehr ber, birga o‘yna va uning ulg‘ayishini kuzat!</p>
+      </div>
+    </section>
+
+    <section class="pet-card">
+      <div class="pet-top">
+        <div>
+          <p class="small-label">SENING JONIVORING</p>
+          <h2 id="petName">Momiq</h2>
+          <p class="age" id="petAge">🐣 1-kun · Mushukcha</p>
+        </div>
+        <div class="level-badge">LVL <span id="level">1</span></div>
+      </div>
+
+      <div class="scene" id="scene">
+        <div class="sun"></div>
+        <div class="cloud cloud-one">☁️</div>
+        <div class="cloud cloud-two">☁️</div>
+        <div class="sparkles" id="sparkles">✦　·　✧</div>
+
+        <div class="pet-shadow"></div>
+        <div id="pet" class="pet" role="img" aria-label="Momiq mushukcha">
+          <div id="petEmoji">🐱</div>
+          <div class="pet-emotion" id="petEmotion">♥</div>
+        </div>
+
+        <div class="sleep-z hidden" id="sleepZ">Z z z...</div>
+        <div class="speech" id="speech" aria-live="polite">Miyov! Salom, do‘stim! 💗</div>
+
+        <div class="scene-floor"></div>
+      </div>
+
+      <div class="pet-summary">
+        <span id="moodEmoji">🥰</span>
+        <span id="moodText">Momiq xursand!</span>
+        <span class="summary-divider">•</span>
+        <span>⭐ <span id="xp">0</span> tajriba</span>
+      </div>
+
+      <div class="xp-track">
+        <div id="xpBar" class="xp-fill"></div>
+      </div>
+      <p class="xp-caption" id="xpCaption">Keyingi darajaga 100 tajriba kerak</p>
+    </section>
+
+    <section class="needs-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MOMIQNING HOLATI</p>
+          <h2>Unga qanday qaraymiz?</h2>
+        </div>
+        <span class="heart">💞</span>
+      </div>
+
+      <div class="needs-grid">
+        <article class="need-card">
+          <div class="need-heading"><span>🍗 Ochlik</span><strong id="hungerText">80%</strong></div>
+          <div class="meter"><div id="hungerBar" class="meter-fill hunger"></div></div>
+          <p id="hungerHint">Qorni to‘q</p>
+        </article>
+
+        <article class="need-card">
+          <div class="need-heading"><span>⚡ Quvvat</span><strong id="energyText">85%</strong></div>
+          <div class="meter"><div id="energyBar" class="meter-fill energy"></div></div>
+          <p id="energyHint">Quvvati yetarli</p>
+        </article>
+
+        <article class="need-card">
+          <div class="need-heading"><span>🫧 Tozalik</span><strong id="cleanText">90%</strong></div>
+          <div class="meter"><div id="cleanBar" class="meter-fill clean"></div></div>
+          <p id="cleanHint">Juda toza</p>
+        </article>
+
+        <article class="need-card">
+          <div class="need-heading"><span>💗 Baxt</span><strong id="happyText">90%</strong></div>
+          <div class="meter"><div id="happyBar" class="meter-fill happy"></div></div>
+          <p id="happyHint">Juda baxtli</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="actions-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">BIRGA VAQT O‘TKAZAMIZ</p>
+          <h2>G‘amxo‘rlik qilish</h2>
+        </div>
+      </div>
+
+      <div class="actions-grid">
+        <button class="action-btn feed" data-action="feed">
+          <span class="action-icon">🍗</span>
+          <span class="action-name">Ovqatlantirish</span>
+          <span class="action-cost">🪙 5 tanga</span>
+        </button>
+
+        <button class="action-btn play" data-action="play">
+          <span class="action-icon">🎾</span>
+          <span class="action-name">Birga o‘ynash</span>
+          <span class="action-cost">+8 tanga</span>
+        </button>
+
+        <button class="action-btn bath" data-action="bath">
+          <span class="action-icon">🛁</span>
+          <span class="action-name">Yuvintirish</span>
+          <span class="action-cost">Bepul</span>
+        </button>
+
+        <button class="action-btn sleep" data-action="sleep" id="sleepBtn">
+          <span class="action-icon">🌙</span>
+          <span class="action-name" id="sleepLabel">Uxlatish</span>
+          <span class="action-cost">Quvvatni tiklash</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="shop-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MOMIQ UCHUN</p>
+          <h2>O‘yinchoqlar do‘koni</h2>
+        </div>
+        <span class="shop-coins">🪙 <span id="shopCoins">30</span></span>
+      </div>
+
+      <div class="shop-grid">
+        <article class="shop-item">
+          <div class="shop-picture">🧶</div>
+          <h3>Ip koptok</h3>
+          <p>Baxt +15</p>
+          <button data-buy="yarn" class="buy-btn">🪙 15</button>
+        </article>
+
+        <article class="shop-item">
+          <div class="shop-picture">🧸</div>
+          <h3>Yumshoq ayiqcha</h3>
+          <p>Baxt +25</p>
+          <button data-buy="teddy" class="buy-btn">🪙 30</button>
+        </article>
+
+        <article class="shop-item">
+          <div class="shop-picture">👑</div>
+          <h3>Oltin toj</h3>
+          <p>Baxt +40</p>
+          <button data-buy="crown" class="buy-btn">🪙 50</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="journal">
+      <div class="journal-icon">📔</div>
+      <div class="journal-content">
+        <h3>Momiqning kundaligi</h3>
+        <p id="journalText">Bugun yangi do‘st topdim! 💗</p>
+        <p class="journal-date" id="lastSaved">Ma’lumotlar saqlanmoqda</p>
+      </div>
+      <button id="renameBtn" class="rename-btn">✏️ Ismini o‘zgartirish</button>
+    </section>
+
+    <footer>
+      <span>🐾 Momiqni mehr bilan asra!</span>
+      <button id="resetBtn" class="reset-btn">Yangidan boshlash</button>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
